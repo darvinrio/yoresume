@@ -1,0 +1,48 @@
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Intermediate documents:
+*.dvi
+*.xdv
+
+## Hyperref
+*.brf
+
+## Other packages
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+
+## Editor backup files
+*.bak
+*.sav
+*~
+
+## MacOS
+.DS_Store

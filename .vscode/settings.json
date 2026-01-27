@@ -1,0 +1,22 @@
+{
+    // Set latexindent as the formatter
+    "latex-workshop.formatting.latex": "latexindent",
+
+    // Path to latexindent (should be in PATH with MacTeX)
+    "latex-workshop.formatting.latexindent.path": "/Library/TeX/texbin/latexindent",
+
+    // Formatting arguments
+    "latex-workshop.formatting.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'"
+    ],
+
+    // Set as default formatter for LaTeX files
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    }
+}
