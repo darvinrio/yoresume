@@ -18,5 +18,69 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop",
         "editor.formatOnSave": true,
         "editor.tabSize": 2
-    }
+    },
+
+    // Auto-build on save
+    "latex-workshop.latex.autoBuild.run": "onSave",
+
+    // Use XeLaTeX recipe
+    "latex-workshop.latex.recipe.default": "xelatex",
+
+    // Define recipes
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": ["xelatex"]
+        },
+        {
+            "name": "xelatex ➞ xelatex",
+            "tools": ["xelatex", "xelatex"]
+        }
+    ],
+
+    // Define tools
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+
+    // Auto-clean auxiliary files
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.synctex.gz",
+        "*.nav",
+        "*.bcf",
+        "*.run.xml"
+    ],
+
+    // View PDF in VS Code tab
+    "latex-workshop.view.pdf.viewer": "tab"
 }
